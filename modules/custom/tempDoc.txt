@@ -1,0 +1,20 @@
+f your code is running on multiple servers with different environments (locations from where your scripts run) the following idea may be useful to you: 
+
+a. Do not give absolute path to include files on your server. 
+b. Dynamically calculate the full path (absolute path) 
+
+Hints: 
+Use a combination of dirname(__FILE__) and subsequent calls to itself until you reach to the home of your '/index.php'. Then, attach this variable (that contains the path) to your included files. 
+
+One of my typical example is: 
+
+<?php 
+define('__ROOT__', dirname(dirname(__FILE__))); 
+require_once(__ROOT__.'/config.php'); 
+?> 
+
+instead of: 
+<?php require_once('/var/www/public_html/config.php'); ?> 
+
+After this, if you copy paste your codes to another servers, it will still run, without requiring any further re-configurations. 
+

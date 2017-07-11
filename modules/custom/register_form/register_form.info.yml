@@ -1,0 +1,5 @@
+name: Registration form
+description: A basic registration form for guest user
+type: module
+package: custom
+core: 8.x

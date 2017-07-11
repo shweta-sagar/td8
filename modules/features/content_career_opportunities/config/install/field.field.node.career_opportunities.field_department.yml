@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_department
+    - node.type.career_opportunities
+  module:
+    - options
+id: node.career_opportunities.field_department
+field_name: field_department
+entity_type: node
+bundle: career_opportunities
+label: Department
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

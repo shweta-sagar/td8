@@ -1,0 +1,9 @@
+type: theme
+name: 'my test theme'
+description: 'Creating my own theme for td8 site'
+core: '8.x'
+regions:
+  header: 'Header'
+  content: 'Content'
+  footer: 'Footer'
+  

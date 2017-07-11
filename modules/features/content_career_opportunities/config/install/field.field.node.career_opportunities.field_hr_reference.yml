@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hr_reference
+    - node.type.career_opportunities
+id: node.career_opportunities.field_hr_reference
+field_name: field_hr_reference
+entity_type: node
+bundle: career_opportunities
+label: 'HR Reference'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,33 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.core_team.body
+    - field.field.node.core_team.field_designation
+    - field.field.node.core_team.field_member_image
+    - field.field.node.core_team.field_title
+    - node.type.core_team
+  module:
+    - text
+    - user
+id: node.core_team.teaser
+targetEntityType: node
+bundle: core_team
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_designation: true
+  field_member_image: true
+  field_title: true

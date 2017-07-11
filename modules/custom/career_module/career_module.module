@@ -1,0 +1,9 @@
+<?php
+
+function custom_m_test() 
+{
+   echo 'Hello world';
+}
+
+
+// print custom_m_test() . ' test';

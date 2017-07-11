@@ -1,0 +1,39 @@
+register_form.guestUser:
+  path: '/registration/user'
+  defaults:
+    _form: 'Drupal\register_form\Form\registerForm'
+    _title: 'Guest user registration form'
+  requirements:
+    _permission: 'access content'
+
+register_form.guestUserEdit:
+  path: '/registration/user/{id}/edit'
+  defaults:
+    _form: 'Drupal\register_form\Form\registerForm'
+    _title: 'Editing user registration form'
+  requirements:
+    _permission: 'access content'
+
+register_form.guestUserDelete:
+  path: '/registration/user/{id}/delete'
+  defaults:
+    _form: 'Drupal\register_form\Form\confirmForm'
+    _title: 'Deleting user account'
+  requirements:
+    _permission: 'access content'
+
+register_form.tempateExample:
+  path: '/register_form/hello/{name}/welcome'
+  defaults:
+    _controller: 'Drupal\register_form\Controller\RegisterFormController::RegData'
+    _title: 'First theme'
+  requirements:
+    _permission: 'access content'
+
+# register_form.fieldCollectionEx:
+#   path: '/register_form/books/'
+#   defaults:
+#     _controller: 'Drupal\register_form\Controller\RegisterFormController::'
+#     _title: 'fetching data through field collection'
+#   requirements:
+#     _permission: 'access content'

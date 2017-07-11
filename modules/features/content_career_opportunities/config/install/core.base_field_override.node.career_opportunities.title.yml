@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.career_opportunities
+id: node.career_opportunities.title
+field_name: title
+entity_type: node
+bundle: career_opportunities
+label: 'career opportunities'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

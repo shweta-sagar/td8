@@ -1,0 +1,21 @@
+career_module.helloPage:
+  path: '/hello/{name}'
+  defaults:
+    _controller: '\Drupal\career_module\Controller\CareerModuleController::helloPage'
+    _title: 'Hello World'
+  requirements:
+    _permission: 'access content'
+career_module.happyHours:
+ path: '/welcome/{value}/happy/{id}'
+ defaults:
+   _controller: '\Drupal\career_module\Controller\CareerModuleController::happyHours'
+   _title: 'Welcome Hours'
+ requirements:
+   _permission: 'access content'
+career_module.addValue:
+  path: '/add/{a}/{b}'
+  defaults:
+    _controller: '\Drupal\career_module\Controller\CareerModuleController::addValue'
+    _title: 'Addition'
+  requirements: 
+    _permission: 'access content'

@@ -1,0 +1,5 @@
+menu_module.menuPage:
+  title: 'Menu form'
+  description: 'Say hello to all members'
+  route_name: menu_module.menuPage
+  weight: 10

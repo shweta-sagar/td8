@@ -1,0 +1,32 @@
+<?php
+
+use Drupal\Core\Form\FormBase;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\register_form\Form;
+
+function register_form_form_alter(&$form, FormStateInterface $form_state, $form_id)
+{
+
+  switch ($form_id) {
+    case 'reg_form':
+      $form['terms_of_use'] = array(
+        '#title' => t('I agree with the website\'s terms and conditions.'),
+        '#type' => 'checkbox',
+        '#required' => 'TRUE',
+        '#weight' => 4,
+      );
+      break;
+    
+    default:
+      # code...
+      break;
+  }
+
+}
+function register_form_theme() {
+  $theme['hello_page'] = [
+      'variables' => ['name_shweta' => NULL],
+    ];
+
+    return $theme;
+}

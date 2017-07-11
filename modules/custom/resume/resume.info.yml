@@ -1,0 +1,5 @@
+name: Resume 
+description: A resume form to enter user details
+core: 8.x
+package: Custom
+type: module

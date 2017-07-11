@@ -1,0 +1,15 @@
+menu_module.menuPage:
+  path: '/custom/my_first_form'
+  defaults:
+    _form: '\Drupal\menu_module\Form\customForm'
+    _title: 'Welcome to my first form'  
+  requirements:
+    _permission: 'access content'
+
+# menu_module.menuCustomForm:
+#   path: '/custom/my_seconnd_form'
+#   defaults:
+#     _form: '\Drupal\menu_module\Contr\customForm'
+#     _title: 'Welcome to my first form'
+#   requirements:
+#     _permission: 'access content'

@@ -1,0 +1,49 @@
+<?php
+use Drupal\Core\Database\Database;
+
+/**
+ * Create new table register_form.
+ */
+function register_form_update_8001() {
+  $schema = array( 
+    'fields' => array(
+      'id' => array(
+        'type' => 'serial',
+        'not null' => TRUE,
+      ), 
+      'Fname' => array(
+        'type' => 'varchar',
+        'not null' => TRUE,
+        'length' => 255,
+      ),
+      'Lname' => array(
+        'type' => 'varchar',
+        'not null' => TRUE,
+        'length' => 255,
+      ),
+      'Gender' => array(
+        'type' => 'varchar',
+        'not null' => TRUE,
+        'length' => 255,
+      ),
+      'Email' => array(
+        'type' => 'varchar',
+        'not null' => TRUE,
+        'length' => 255,
+      ),
+    ),
+    'primary key' => array('id'),
+  );
+  $table = Database::getConnection()->schema();
+  $table->createTable('register_form', $schema);
+  return $table;
+}
+// function register_form_update_8002()
+// {
+//   $updateData = array(
+//     'Gender' => 'Male',
+//     );
+//   $updateQuery = update('register_form')
+//   ->fields('$updateData')
+//   ->condition('id','2')->execute();
+// }

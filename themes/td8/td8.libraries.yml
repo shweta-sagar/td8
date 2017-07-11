@@ -1,0 +1,4 @@
+global-styling:
+  css:
+    td8:
+      css/style.css: {}

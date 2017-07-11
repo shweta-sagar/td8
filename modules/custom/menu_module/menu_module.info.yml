@@ -1,0 +1,5 @@
+name: Menu Form 
+description: A menu form to enter user data
+core: 8.x
+package: Custom
+type: module

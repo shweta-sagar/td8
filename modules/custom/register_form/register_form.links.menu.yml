@@ -1,0 +1,11 @@
+register_form.createAcc:
+  title: 'Guest account'
+  description: 'Create Guest Account'
+  route_name: register_form.guestUser
+  weight: 10
+
+# register_form.tempateExample:
+#   title: 'Hello'
+#   description: 'Performing addition of two values'
+#   route_name: register_form.tempateExample
+#   weight: 15

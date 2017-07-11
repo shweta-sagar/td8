@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location
+    - node.type.career_opportunities
+id: node.career_opportunities.field_location
+field_name: field_location
+entity_type: node
+bundle: career_opportunities
+label: Location
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: Delhi
+default_value_callback: ''
+settings: {  }
+field_type: string

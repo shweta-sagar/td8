@@ -1,0 +1,17 @@
+career_module.helloPage:
+  title: 'Hello World'
+  description: 'Say hello to all members'
+  route_name: career_module.helloPage
+  weight: 10
+
+career_module.happyHours:
+  title: 'Hello World'
+  description: 'Say hello to all members'
+  route_name: career_module.happyHours
+  weight: 10
+
+career_module.addValue:
+  title: 'Addition'
+  description: 'Performing addition of two values'
+  route_name: career_module.addValue
+  weight: 15
